@@ -1,0 +1,15 @@
+{% comment %} Bismillah Hir Rehman Nir Rahim {% endcomment %}
+
+<form method="POST" action="">
+ <table>{{ form }}</table>
+ <input type="submit" value="Update" />
+ {% csrf_token %}
+ <table border='1'>
+    {% for field in form%}
+        <tr>
+            <td>{{field.label}}</td>
+            <td>{{field.value}}</td>
+        </tr>
+    {% endfor%}
+</table>
+ </form>

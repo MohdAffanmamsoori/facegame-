@@ -1,0 +1,226 @@
+<!-- Bismillah Hir Rehman Nir Rahim -->
+
+{% extends "base.html" %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alhamdulillah Main Dashboard</title>
+
+    <!-- <link rel="stylesheet" href='template/main.css'> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+{% comment %}         
+        .logo img {
+            width: 84px;
+        }
+        
+        header {
+            background-color: #4d5434
+        }
+        
+        nav ul {
+            display: inline-flex;
+            justify-content: left;
+            float: right;
+            margin: -83px;
+            margin-right: 59px;
+            list-style: none;
+        }
+        
+        nav ul li {
+            padding: 7px;
+            text-decoration: none;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 2px;
+            font-size: 17px;
+            border: 2px solid black;
+            margin-top: -6px;
+            margin-left: 18px;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 119px;
+            box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+         {% endcomment %}
+          main {
+            
+            height: 100vh
+            font-family: 'Source Serif Pro', serif;
+            background-color: #f6f6f6;
+          }
+        
+        .headingmain {
+            display: inline-flex;
+            flex-direction: column;
+            margin-left: 380px;
+        }
+        
+        .headingmain h1 {
+            color: rgb(99 108 114);
+            margin-left: -21px;
+            font-size: 43px;
+        }
+        
+        .headingmain p {
+            line-height: 51px;
+        }
+        
+        main a button {
+            width: 22vw;
+            background-color: rgb(0, 122, 255);
+            color: black;
+            border: 2px solid #4CAF50;
+            padding: 9px 51px;
+            margin-left: 415px;
+            font-size: large;
+            border-radius: 16px;
+            margin-top: 30px;
+            cursor: pointer;
+            opacity: 0.9;
+        }
+        
+        main a button:hover {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    {% comment %} <header>
+        <div class="logo">
+            <img src="static/ftmo.png" alt="Opportunity for Gamers">
+        </div>
+
+{% comment %} {% block body %}
+{% endblock %} {% endcomment %}
+
+
+
+        {% comment %} <nav>
+            <ul>
+                <li> <a href="/">Let's Play</a></li>
+                <li> <a href="/">My Earnings</a></li>
+                <li> <a href="/">Best Games to Play</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">{{user.get_username}}</button>
+                        <div class="dropdown-content">
+                            <a href="logoutuser">Logout</a>
+                            <a href="/">Home</a>
+                            <a href="https://www.facebook.com/live/producer/" target="blank">Upload Video</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+   {% endcomment %}
+        <!-- li aur ul k andar dalni h navbar bnakr In Sha Allah
+             <div class="dropdown">  
+            <button class="dropbtn">{{user.get_username}}</button>
+            <div class="dropdown-content">
+                <a href="logoutuser">Logout</a>
+                <a href="/">Home</a>
+                <a href="#">Upload Video</a>
+            </div>
+        </div> -->
+
+
+    </header>
+    <main>
+        <div class="headingmain">
+
+            <h1>Start Enjoying Stop worrying!</h1>
+            <p> <br>
+                <li> What if! Playing Your Favourite games and Earn Riches </li>
+                <br>
+                <li> No Limits on Play Time And Earning </li>
+                <br>
+                <li> The More You Play The Views You Get </li>
+                <br>
+                <li> The More Views You Recieve The More Riches You acquire</li>
+            </p>
+        </div>
+        <a href="https://www.facebook.com/live/producer/" target="blank">
+            <button type="submit">Go Live</button> </a>
+
+    </main>
+
+
+
+    {% comment %} <footer>
+        <footer style="background: #4d5434;
+    height: 175px;">
+            <div class="downtext" style="height: 27px;
+        font-size: large;
+        line-height: 40px;
+        color: white;">
+
+                Copyright &copy; All Rights Reserved
+
+                <br>
+                <a href="">testmail.com</a>
+                <br>
+                <a href="">Contact</a>
+                <br>
+                <a href=""> Privacy Policy </a>
+
+
+            </div>
+
+        </footer> {% endcomment %}
+{% endblock %}
+</body>
+
+
+</html>

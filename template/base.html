@@ -1,0 +1,244 @@
+{% comment %} Bismillah Hir Rehman Nir Rahim {% endcomment %} {% load static %}
+<link rel="stylesheet" type="text/css" href="template/index.html">
+<header>
+    <div class="logo">
+        <img src="static/ftmo.png" alt="Opportunity for Gamers">
+    </div>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo img {
+            width: 80px;
+        }
+        
+        header {
+            background-color: #4d5434;
+            height: 100px;
+        }
+        
+        nav ul {
+            display: inline-flex;
+            justify-content: left;
+            float: right;
+            margin: -83px;
+            margin-right: 59px;
+        }
+        
+        nav ul li {
+            padding: 7px;
+            text-decoration: none;
+            list-style: none;
+            font-size: 15px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Merriweather Sans', sans-serif;
+            font-size: 19px;
+        }
+        
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 2px;
+            font-size: 17px;
+            border: 2px solid black;
+            margin-top: -6px;
+            margin-left: 18px;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 119px;
+            box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        
+        main {
+            min-height: calc(100vh - 175px);
+            font-family: 'Source Serif Pro', serif;
+            background-color: #f6f6f6;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li> <a href="/">Let's Play</a></li>
+            <li> <a href="userearning">My Earnings</a></li>
+            <li> <a href="/">Best Games to Play</a></li>
+            <li> <a href="bank_details">Add Bank Details</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">{{user.get_username}}</button>
+                    <div class="dropdown-content">
+                        <a href="logoutuser">Logout</a>
+                        <a href="/">Home</a>
+                        <a href="https://www.facebook.com/live/producer/" target="blank">Upload Video</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- <style>
+
+   
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 2px;
+            font-size: 17px;
+            border: 2px solid black;
+            margin-top: -6px;
+            margin-left: 18px;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 119px;
+            box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        </style> -->
+
+
+{% comment %}
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'website/css/bootstrap.css'  %}">
+<link rel="stylesheet" href="{% static 'website/vendors/linericon/style.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'website/vendors/owl-carousel/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'website/vendors/nice-select/css/nice-select.css' %}">
+<link rel="stylesheet" href="{% static 'website/vendors/animate-css/animate.css' %}">
+<link rel="stylesheet" href="{% static 'website/vendors/flaticon/flaticon.css' %}">
+<!-- main css -->
+<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+
+
+
+<!--================Header Menu Area =================-->{% endcomment %}
+<!-- <header class="header_area">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        Brand and toggle get grouped for better mobile display 
+                        <a class="navbar-brand logo_h" href="index.html"><img src="{% static 'website/img/logo.png' %}" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                         Collect the nav links, forms, and other content for toggling 
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav justify-content-center">
+                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a>
+                                    <li class="nav-item submenu dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a class="nav-link" href="price.html">Pricing</a>
+                                                <li class="nav-item"><a class="nav-link" href="games.html">Games</a>
+                                                    <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a>
+                                        </ul>
+                                        </li>
+                                        <li class="nav-item submenu dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                           <div class="dropdown">
+                        <button class="dropbtn">{{user.get_username}}</button>
+                        <div class="dropdown-content">
+                            <a href="logoutuser">Logout</a>
+                            <a href="/">Home</a>
+                            <a href="https://www.facebook.com/live/producer/" target="blank">Upload Video</a>
+                        </div>
+                    </div>
+                            </ul> -->
+{% block content %} {% endblock %} {% comment %}
+<footer>
+    <footer style="background: #4d5434;" height="175px">
+        <div class="downtext" style="height: 27px;
+    font-size: large;
+    line-height: 40px;
+    color: white;">
+
+            Copyright &copy; All Rights Reserved
+
+            <br>
+            <a href="">testmail.com</a>
+            <br>
+            <a href="">Contact</a>
+            <br>
+            <a href=""> Privacy Policy </a>
+
+
+        </div>
+
+    </footer> {% endcomment %}

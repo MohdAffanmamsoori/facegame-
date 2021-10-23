@@ -1,0 +1,65 @@
+<!-- Bismillah Hir Rehman Nir Rahim -->
+
+{% extends "base.html" %} Alhamdulillah {% block content %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .earnest {
+        height: 21vh;
+        width: 305px;
+        border: 2px solid black;
+        border-radius: 5;
+        border-radius: 44px;
+    }
+    
+    .earnest h2 {
+        height: 100px;
+        margin: 20px;
+    }
+    
+    .livevids {
+        margin-right: 344px;
+        height: 21vh;
+        width: 305px;
+        border: 2px solid black;
+        border-radius: 5;
+        border-radius: 44px;
+        float: right;
+        margin-top: -149px;
+    }
+    
+    .livevids h2 {
+        padding: 17px;
+    }
+</style>
+
+
+
+
+
+
+
+<body>
+    {% for uservids in uservids %} {{ livevids }}
+
+
+    <div class="earnest">
+        <h2> Your Estimated Earnings </h2>
+        <div class="uservidsearn">
+
+            {{ uservids.earning}}
+        </div>
+    </div>
+    <div class="livevids">
+
+        <h2> Live Videos </h2>
+        <div class="livevidsupload">
+            {{ uservids.livevids }}
+        </div>
+    </div>
+
+    {% endfor %} {% endblock %}
+</body>

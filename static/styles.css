@@ -1,0 +1,112 @@
+/* Bismillah Hir Rehman Nir Rahim */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Lato:ital,wght@1,300&family=Merriweather+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 80px;
+}
+
+header {
+    background-color: #1e1e1e;
+    height: 100px;
+/* }
+
+nav ul {
+    display: inline-flex;
+    justify-content: left;
+    float: right;
+    margin: -83px;
+    margin-right: 59px;
+}
+
+nav ul li {
+    padding: 7px;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white !important;
+}
+
+nav ul li a:hover {
+    color: blue;
+    font-size: large;
+}
+
+main {
+    background-color: #202121;
+    min-height: calc;
+}
+
+
+/* #get-started p {
+            font-size: larger;
+            margin-top: -204px;
+            color: aqua;
+            float: left;
+
+        } 
+
+p {
+    font-size: 21px;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: -117px;
+    line-height: 90px;
+}
+
+.textmain {
+    font-size: larger;
+    font-weight: 900;
+    color: cornsilk;
+    padding: 73px;
+}
+
+.imagemain img {
+    background-repeat: no-repeat;
+    height: 564px;
+    width: 50%;
+    margin-left: -8px;
+    float: right;
+}
+
+.signup {
+    margin: 16px;
+    background-color: transparent;
+    color: #FFEB3B;
+    border: 2px solid #4CAF50;
+    padding: 8px 51px;
+    margin-left: 89px;
+    font-size: large;
+    border-radius: 16px;
+    margin-top: -11px;
+}
+
+.signup:hover {
+    transition-duration: 0.4s;
+    background-color: blue;
+    color: white; 
+}
+
+
+/* 
+footer.downtext li a {
+    display: flex;
+    background-color: #1e1e1e;
+} */
+
+
+/* footer {
+    background: #1e1e1e;
+    height: 80px;
+} */
+
+nav ul li a:hover {
+    color: blue;
+}
